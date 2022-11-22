@@ -1,0 +1,28 @@
+
+
+<div class="game">
+    <h4>Customize your game</h4>
+    <label for="id">
+        id:
+        <input type="number" name="id" id="id" [(ngModel)]="game.board.id" />
+    </label>
+    <label for="mode">
+        mode:
+        <select [(ngModel)]="game.board.mode.type" name="mode" id="mode">
+            <option value="local">local</option>
+            <option value="server">server</option>
+        </select>
+    </label>
+    <label for="backgroundColor">
+        color:
+        <input type="color" name="color" id="color" [(ngModel)]="game.board.board.color" />
+    </label>
+    <label for="ballSpeed">
+        ballSpeed:
+        <input type="number" name="ballSpeed" id="ballSpeed" [(ngModel)]="game.ball.speed" />
+    </label>
+    <label for="scoreToWin">
+        scoreToWin:
+        <input type="number" name="scoreToWin" id="scoreToWin" [(ngModel)]="game.board.scoreToWin" />
+    </label>
+</div>

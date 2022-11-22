@@ -1,0 +1,23 @@
+<div class="user_salon" (click)="showFormule()" >
+   
+    <div class="user_p1" >
+    <div class="avatar_user" style="background-image:url({{guest.avatar}})"> </div>
+    
+    <div class="name_user" >{{guest.nickname}}</div>
+    </div><!--fin user_p1-->
+</div><!-- fin de user_salon -->
+
+
+
+<div *ngIf="CanUchangePwd==true">
+    <div class="env_pwd" *ngIf="show_pwd==true" >
+    
+        
+         <input type ="text" [(ngModel)]="new_pwd" required />
+         <button class="change_pwd" (click)="resetPwd()"> Reset PWD </button>
+         <button class="change_pwd" (click)="cancelPwd()"> Cancel PWD </button>  
+
+    
+   
+    </div> <!--fin env_pwd-->
+</div>

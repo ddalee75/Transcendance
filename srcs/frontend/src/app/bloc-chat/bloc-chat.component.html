@@ -1,0 +1,14 @@
+<div class="all_bloc_chat" >
+    <div class="page_input">
+    <app-chat *ngIf="visible"></app-chat>
+    
+    </div>
+    <div class="env_chat" >
+      <div class="icon_chat" (click)="showhide()" *ngIf="visible2"></div>
+      <button type="button" (click)="showhide()" *ngIf="!visible2" style="background-color:{{color}}">
+        {{buttonTitle}}
+      </button>  
+    </div><!-- fin d env_chat -->
+
+    
+</div><!-- fin d all_bloc_chat -->

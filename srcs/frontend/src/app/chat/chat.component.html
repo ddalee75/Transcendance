@@ -1,0 +1,83 @@
+
+
+
+<div class="all_chat">
+<div class="chat" *ngIf="privatOrpublic==false" >
+	
+	<div class="part1">
+		<img src="../../assets/icons/chat_titre.png">
+	</div><!-- fin de div part1 -->
+
+<!-- ///////////////////////////////////////////////////////// -->
+
+	<div class="part2">
+	
+		<div class="part2_left">
+			
+
+			<app-direct-chat [Dest]="Dest" [Me]="Me"  *ngIf="this.showchat==true"> </app-direct-chat>
+
+			<app-create-salon *ngIf="showFormule" (ShowSalonEvent)="receiveShowSalon($event)" (SendChannelNameEvent)="receiveChannelName($event)"></app-create-salon>
+
+			<app-password *ngIf="showFormulePassword" [channel]="privateChannel" 
+			(ShowChannelPrivateEvent)="receiveShowchannelPrivate($event)"
+			(ShowFormulePasswordEvent)="receiveShowFormulePassword($event)"></app-password>
+
+
+		</div><!-- fin de div part2_left -->
+	
+		<div class="part2_right">
+
+			<div class="part2_titre_online">Users list</div>
+			<div class="part2_users_online">
+				<div *ngFor="let user of User_filtred_list">
+					<app-select-user [user]="user" [Me]="Me" (showchatEvent)="receiveShowchat($event)" (click)="closeCreateSalon()"></app-select-user>
+				</div>
+			</div>
+
+			<div class="part2_titre_friends">Friends Online</div>
+			<div class="part2_friends_online">
+				<div *ngFor="let friend of Friend_filtred_list">
+				<app-friend-user  [friend]="friend" [Me]="Me" (showchatEvent)="receiveShowchat($event)" ></app-friend-user>
+				</div>
+			</div>
+		
+			<div class="part2_titre_create" (click)="formuleCreate()">Create Salon</div>
+			
+			<div class="part2_salon_available">List of Salon</div>
+			<div class="part2_list_salon">
+				
+				<app-salon-available [current_user]="this.Me" (ShowChannelPublicEvent)="receiveChannelPublic($event)"  (SendJoinChannelNameEvent)="receiveJoinChannelName($event)"
+				(ShowFormulePasswordEvent)="receiveShowFormulePassword($event)"	
+				(showchatEvent)="receiveShowchat($event)"
+				(showFormuleEvent)="receveShowformule($event)"
+				(SendChannelEvent)="receivePrivateChannel($event)"
+				>
+				</app-salon-available>
+				
+			</div>
+
+		</div><!-- fin de div part2_right -->
+
+	</div><!-- fin de div part2 -->
+
+
+<!-- ///////////////////////////////////////////////////////// -->
+
+	<div class="part3">
+
+
+
+	</div><!-- fin de div part3 -->
+
+</div> <!-- fin de div chat -->
+
+
+<!-- ///////////////////////////////////////////////////////// -->
+<!-- salon visible ou pas-->
+<div class="salon" *ngIf="privatOrpublic==true">
+	<app-salon [channel_name]="channel_name" [current_user]="Me" (QuitSalonEvent)="receiveQuitSalon($event)" ></app-salon>
+</div>
+
+
+</div><!-- fin de div all-chat -->

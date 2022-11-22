@@ -1,0 +1,72 @@
+<div class="background_salon">
+
+<div class="all_salon">
+
+    <div class="titre_salon">
+        <div class="titre_salon_p1"></div>
+        <div class="titre_salon_p2">" {{channel_name}} "</div>
+        <div class="titre_salon_p3">
+            <button type ="pause" (click)="pauseSalon()"><span>></span></button>
+            <button type ="exit" (click)="quitSalon()"><span>exit</span></button>
+          
+        </div>
+    </div><!-- fin de titre_salon -->
+
+
+
+<!-- ###### contenu Chat #####-->
+    <div class="contenu_salon"> 
+
+        <div class="env_conversation" style="overflow-y: auto; height: xyz;" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+            <div class="conversation_salon" *ngFor="let histoMsg of historiqueConv"> {{histoMsg.fromUserName}}: {{histoMsg.content}} </div>
+            <div class="conversation_salon" *ngFor="let userMessage of conversation" > {{ userMessage }}
+            </div><!-- fin de conversation_salon -->
+        </div><!-- fin de env_conversation -->
+
+        
+<!-- ######users in salon #####-->
+        <div class="guest_salon">
+            
+            <div class="titre_administrator">
+                Creator
+            </div>
+            
+            <div class="userInSalon" *ngFor ="let userAdmin of usersAdmin" > 
+                <app-creator-in-salon  [current_user]="current_user" [current_channel] ="current_channel" [guest]=userAdmin *ngIf="isCreator(userAdmin)==1"></app-creator-in-salon>
+            </div>
+
+
+            <div class="titre_administrator">
+                Administrator
+            </div>
+            <div class="userInSalon" *ngFor ="let userAdmin of usersAdmin" > 
+                <app-admin-in-salon  [usersAdmin]="usersAdmin" [current_channel]="current_channel" [guest]=userAdmin [CreatorId]="CreatorId" *ngIf="isCreator(userAdmin)==0"></app-admin-in-salon>
+            </div>
+            
+            
+
+            <div class="titre_guest">
+                Guests in Salon
+            </div><!-- fin de titre_guest -->
+            
+            <div class="userInSalon" *ngFor ="let userInSalon of usersInGuest">
+                <app-user-in-salon  [usersAdmin]="usersAdmin"  [current_channel]="current_channel" *ngIf="isAdmin(userInSalon)==0" [guest]=userInSalon></app-user-in-salon>
+            </div>
+            
+        </div><!-- fin de guest_salon -->
+
+    </div><!-- fin de contenu_salon -->
+
+
+<!-- ######Partie Input message #####-->
+
+    <div class="input_salon">
+    <!-- <input type="text" (keydown.enter)="sendMessage()" [(ngModel)]="message"> -->
+    <input type="text" (keydown.enter)="sendMessage()" [(ngModel)]="message">
+    </div><!-- fin de input_salon -->
+
+
+
+</div><!-- fin de all_salon -->
+
+</div><!-- fin de background_salon -->

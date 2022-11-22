@@ -1,0 +1,297 @@
+.background_salon{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+ 
+
+
+   
+}
+
+.all_salon{
+    width: 500px;
+    height: 500px;
+    padding-top: 3px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.titre_salon{
+    width: 500px;
+    height: 40px;
+    background-color: rgb(24, 21, 21);
+    color: aliceblue;
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+   
+}
+
+.titre_salon_p1{
+    font-size: 20px;
+    text-align: end;
+    width: 10%;
+    /* background-color: aqua; */
+}
+
+.titre_salon_p2{
+    font-size: 20px;
+    width: 60%;
+    /* background-color: rgb(17, 114, 114); */
+    padding-top: 6px;
+}
+
+.titre_salon_p3{
+    width: 30%;
+    align-items: center;
+    display: flex;
+    flex-direction: center;
+    /* background-color: rgb(11, 63, 63); */
+}
+
+
+button[type="exit"]{
+    position: relative;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    line-height: 18px;
+    background-color: rgb(41, 75, 80);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    -webkit-box-reflect: below 1px linear-gradient (transparent, #0004);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button[type="exit"]::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094,#00f,#0f0, #ff0, #f00);
+    background-size: 400%;
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 20s linear infinite;
+    border-radius: 20px;
+   
+
+}
+
+button[type="exit"]::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094,#00f,#0f0, #ff0, #f00);
+    background-size: 400%;
+    opacity: 0;
+    filter: blur(20px);
+    transition: 0.5s;
+    animation: animate 20s linear infinite;
+    border-radius: 20px;
+
+}
+
+button[type="exit"]:hover::before,
+button[type="exit"]:hover::after{
+    opacity: 1;
+
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 300% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+
+}
+
+button[type="exit"] span{
+    position: absolute;
+    display: block;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    text-align: cetner;
+    background: #0c0c0c;
+    color: rgba(250, 241, 241);
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+button[type="exit"]:hover span{
+    color: rgba(255,255,255,1);
+}
+
+button[type="exit"] span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+
+}
+
+button[type="pause"]{
+    color: aliceblue;
+
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: rgb(62, 65, 66);
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    
+    transform: rotate(90deg);
+}
+
+button[type="pause"]:hover{
+    color: rgb(240, 255, 254);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: rgb(18, 161, 125);
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-transform: uppercase;
+    transform: rotate(135deg);
+
+}
+
+
+
+.contenu_salon{
+    width: 500px;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content:space-between;
+    
+
+}
+
+.env_conversation{
+    width: 70%;
+    background-color: rgb(0,0,0);
+    background-image: url(../../assets/imgs/login1240x1240px.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    
+
+}
+
+.conversation_salon{
+    color: aliceblue;
+    font-size: 18px;
+    max-width: 95%;
+    margin: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(110, 110, 108, 0.308);
+    border-radius: 10px;
+    word-wrap:break-word;
+    
+}
+
+
+.guest_salon{
+
+    width: 30%;
+    height: 100%;
+    background-color: rgb(31, 31, 31);
+    overflow: auto;
+ 
+}
+
+.titre_administrator{
+    font-size: 14px;
+    color:rgb(131, 129, 125);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    margin-top: 2px;
+
+}
+
+.titre_guest{
+    
+    font-size: 14px;
+    color:rgb(131, 129, 125);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    margin-top: 2px;
+
+
+}
+
+
+/* .user_salon{
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+.avatar_user{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+}
+.name_user{
+    padding-left: 5px;
+    color: aliceblue;
+
+} */
+
+.input_salon{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(24, 21, 21);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text]{
+    width: 95%;
+    height: 75%;
+    background-color: rgb(223, 223, 223);
+    font-size: 18px; 
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}

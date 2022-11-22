@@ -1,0 +1,29 @@
+.ball{
+    /* background-color: aquamarine; */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+   
+    
+}
+
+h4{
+    margin-bottom: 20px;
+    color: aquamarine;
+}
+input[type=number]{
+    background-color: rgb(254, 255, 255);
+    border-radius: 20px;
+    text-align: center;
+    width: 100px;
+}
+
+input[type=color]{
+    
+    border-radius: 5px;
+    text-align: center;
+    width: 50px;
+    
+}

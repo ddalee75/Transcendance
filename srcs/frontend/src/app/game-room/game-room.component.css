@@ -1,0 +1,494 @@
+
+
+.all_game{
+    width: 100%;
+    height: 100vh;
+    background-color: #212229;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+
+    background-image: url("../../assets/imgs/game2540x1240px.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+  
+
+  
+}
+
+.titre_game{
+    /* background-color: blueviolet; */
+    background-image: url("../../assets/imgs/game_room_90sgames-2.png");
+    width: 250px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    /* margin-left: 200px; */
+    
+}
+
+
+.bloc_item_games{
+    /* background-color: #8b642d; */
+    padding-top: 50px;
+    width: 960px;
+    height: 500px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    /* margin-left: 200px; */
+
+
+}
+
+.game_pong{
+    /* background-color: rgb(114, 158, 158); */
+    background-image: url("../../assets/imgs/game_room_pong.jpg");
+    width: 230px;
+    height: 180px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    cursor: pointer;
+
+    
+}
+
+.game_mariokart{
+    width: 230px;
+    height: 180px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-image: url("../../assets/imgs/game_room_mariokart.jpg");
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 80px;
+
+    
+}
+
+
+
+.game_streetfi{
+    width: 230px;
+    height: 180px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-image: url("../../assets/imgs/game_room_sf.jpg");
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 80px;
+
+    
+}
+
+.game_tennis{
+    width: 230px;
+    height: 180px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-image: url("../../assets/imgs/game_room_tenis.jpg");
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 80px;
+
+    
+}
+
+
+
+.game_tetris{
+    width: 230px;
+    height: 180px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-image: url("../../assets/imgs/game_room_tetris.jpg");
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 80px;
+
+  
+}
+
+.game_puzzleBubble{
+    width: 230px;
+    height: 180px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-image: url("../../assets/imgs/game_room_puzzlebubble.jpg");
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 80px;
+
+   
+    
+}
+
+h2{
+    background-color: black;
+    height: 40px;
+}
+
+.pong_jouers{
+    /* background-color: blueviolet; */
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.bloc_players_anonyme{
+    width: 200px;
+    height: auto;
+}
+
+.bloc_just_play{
+ 
+    width: 180px;
+    height: 250px;
+    color: rgb(144, 250, 6);
+    text-align: center;
+    background-color: rgba(34, 158, 137, 0.281);
+    border-radius: 10px;
+    
+    align-items: center;
+}
+
+.env_just_play{
+    width: 120px;
+    
+    background-color: rgb(51, 48, 38);
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.just_play_photo{
+    width: 120px;
+    height:120px;
+    background-image: url("../../assets/imgs/faceleemen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: aquamarine;
+  
+}
+
+.just_play_name{
+    background-color: rgb(2, 0, 0);
+
+}
+
+.just_play_play{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.bloc_players_available{
+   
+    color: rgb(144, 250, 6);
+    text-align: center;
+    width: 500px;
+    height: auto;
+    background-color: rgba(34, 158, 137, 0.281);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.env_player_available{
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(175, 73, 13); */
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.player_available{
+    width: 120px;
+    /* background-color: rgb(51, 48, 38); */
+    margin: 20px;
+
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .all_game{
+        width: 100%;
+        min-height: 120vh;
+        background-color: #212229;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 100px;
+    
+        background-image: url("../../assets/imgs/game_600px2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+      
+    
+      
+    }
+    
+    .titre_game{
+        /* background-color: blueviolet; */
+        background-image: url("../../assets/imgs/game_room_90sgames-2.png");
+        width: 250px;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+        /* margin-left: 200px; */
+        
+    }
+    
+    
+    .bloc_item_games{
+        /* background-color: #8b642d; */
+        padding-top: 50px;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        /* margin-left: 200px; */
+        margin-bottom: 100px;
+    
+    
+    }
+    
+    .game_pong{
+        /* background-color: rgb(114, 158, 158); */
+        background-image: url("../../assets/imgs/game_room_pong.jpg");
+        width: 200px;
+        height: 150px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+    
+        
+    }
+    
+    .game_mariokart{
+        width: 200px;
+        height: 150px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-image: url("../../assets/imgs/game_room_mariokart.jpg");
+        color:rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 60px;
+    
+        
+    }
+    
+    
+    
+    .game_streetfi{
+        width: 200px;
+        height: 150px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-image: url("../../assets/imgs/game_room_sf.jpg");
+        color:rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 60px;
+    
+        
+    }
+    
+    .game_tennis{
+        width: 200px;
+        height: 150px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-image: url("../../assets/imgs/game_room_tenis.jpg");
+        color:rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 60px;
+    
+        
+    }
+    
+    
+    
+    .game_tetris{
+        width: 200px;
+        height: 150px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-image: url("../../assets/imgs/game_room_tetris.jpg");
+        color:rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 60px;
+    
+      
+    }
+    
+    .game_puzzleBubble{
+        width: 200px;
+        height: 150px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-image: url("../../assets/imgs/game_room_puzzlebubble.jpg");
+        color:rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 60px;
+    
+       
+        
+    }
+
+
+   
+    h2{
+        background-color: black;
+        height: 40px;
+    }
+
+    .pong_jouers{
+        /* background-color: blueviolet; */
+        width: 280px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .bloc_players_anonyme{
+        width: 200px;
+        height: auto;
+    }
+
+    .bloc_just_play{
+    
+        width: 180px;
+        height: 250px;
+        color: rgb(144, 250, 6);
+        text-align: center;
+        background-color: rgba(34, 158, 137, 0.281);
+        border-radius: 10px;
+        
+        align-items: center;
+    }
+
+    .env_just_play{
+        width: 120px;
+        height: 150px;
+        background-color: rgb(51, 48, 38);
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .just_play_photo{
+        width: 120px;
+        height:120px;
+        background-image: url("../../assets/imgs/faceleemen.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-color: aquamarine;
+    
+    }
+
+    .just_play_name{
+        background-color: rgb(39, 39, 39);
+
+    }
+
+    .just_play_play{
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .bloc_players_available{
+    
+        color: rgb(144, 250, 6);
+        text-align: center;
+        width: 400px;
+        height: auto;
+        background-color: rgba(34, 158, 137, 0.281);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+       
+        
+    }
+
+
+    .env_player_available{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+      
+        
+    }
+
+
+  
+
+}

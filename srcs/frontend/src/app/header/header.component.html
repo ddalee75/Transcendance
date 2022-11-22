@@ -1,0 +1,24 @@
+<header>
+<div class="all_header">
+
+    <a class="logo_header" routerLink="/home"></a><!-- fin de logo_header -->
+    
+    <div class="nav_header">
+        <a class="game_nav_header" routerLink="/game-room"></a><!-- fin de game_nav_header -->
+        <a class="show_nav_header" routerLink="/show-room"></a><!-- fin de show_nav_header -->
+        <a class="vip_nav_header" routerLink="/vip-room"></a><!-- fin de vip_nav_header -->
+        <a class="private_nav_header" routerLink="/rest-room"></a><!-- fin de private_nav_header -->
+    </div><!-- fin de nav_header -->
+        
+    <!-- <div class="username_header"> Welcome "{{login | async}}" -->
+    <div class="username_header"> Welcome "{{login}}"
+        <div class="logout">
+        <button type ="logout" (click)="logout()"><span>Logout</span></button>
+        </div>
+    </div><!-- fin de username_header -->
+    
+
+
+
+</div><!-- fin de all_header -->
+</header>

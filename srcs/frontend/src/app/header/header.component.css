@@ -1,0 +1,500 @@
+
+.all_header{
+    width: 100%;
+    height:120px;
+    background-color: #414141;
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+.logo_header{
+    width: 200px;
+    height: 120px;
+    /* background-color: rgb(60, 165, 130); */
+    background-image: url("../../assets/icons/logo_f.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+
+.nav_header{
+    width: 480px;
+    height: 120px;
+    /* background-color: rgb(80, 7, 148); */
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.game_nav_header{
+    width: 120px;
+    height: 120px;
+    /* background-color: #414141; */
+    background-image: url("../../assets/icons/gameroom-f.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-right: 20px;
+}
+
+.game_nav_header:hover{
+    width: 120px;
+    height: 120px;
+    background-color: #414141;
+    background-image: url("../../assets/icons/gameroom.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+    /* background-color: rgb(255, 217, 0); */
+}
+
+.show_nav_header{
+    width: 120px;
+    height: 120px;
+    /* background-color: #414141; */
+    background-image: url("../../assets/icons/showroom-f.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-right: 20px;
+}
+
+.show_nav_header:hover{
+    width: 120px;
+    height: 120px;
+    /* background-color: rgb(255, 217, 0); */
+    background-image: url("../../assets/icons/showroom.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.vip_nav_header{
+    width: 120px;
+    height: 120px;
+    /* background-color: rgb(1, 182, 143); */
+    margin-right: 10px;
+    background-image: url("../../assets/icons/viproom-f.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.vip_nav_header:hover{
+    width: 120px;
+    height: 120px;
+    /* background-color: rgb(255, 217, 0); */
+    background-image: url("../../assets/icons/viproom.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.private_nav_header{
+    width: 120px;
+    height: 120px;
+    /* background-color: rgb(33, 75, 5); */
+    margin-right: 20px;
+    background-image: url("../../assets/icons/lounge.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.private_nav_header:hover{
+    width: 120px;
+    height: 120px;
+    /* background-color: rgb(255, 217, 0); */
+    background-image: url("../../assets/icons/lounge.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.username_header{
+    
+    align-items: center;
+    text-align: center;
+    padding-top:45px;
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
+    color: aliceblue;
+ 
+}
+
+/* button[type="logout"]{
+    width: 80px;
+    height: 20px;
+    background-color: rgb(224, 250, 250);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+} */
+.logout{
+    width: 100 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+
+}
+
+button[type="logout"]{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    background-color: rgb(41, 75, 80);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    -webkit-box-reflect: below 1px linear-gradient (transparent, #0004);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button[type="logout"]::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094,#00f,#0f0, #ff0, #f00);
+    background-size: 400%;
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 20s linear infinite;
+    border-radius: 20px;
+   
+
+}
+
+button[type="logout"]::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094,#00f,#0f0, #ff0, #f00);
+    background-size: 400%;
+    opacity: 0;
+    filter: blur(20px);
+    transition: 0.5s;
+    animation: animate 20s linear infinite;
+    border-radius: 20px;
+
+    
+
+}
+
+button[type="logout"]:hover::before,
+button[type="logout"]:hover::after{
+    opacity: 1;
+
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 300% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+
+}
+
+button[type="logout"] span{
+    position: absolute;
+    display: block;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    text-align: cetner;
+    background: #0c0c0c;
+    color: rgba(250, 241, 241);
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+button[type="logout"]:hover span{
+    color: rgba(255,255,255,1);
+}
+
+button[type="logout"] span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .all_header{
+        width: 100%;
+        height:150px;
+        background-color: #414141;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+  
+      
+    }
+    
+    .logo_header{
+        margin-top: 10px;
+        width: 30%;
+        height: 30px;
+        background-image: url("../../assets/icons/logo_horizan.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    
+    
+    .nav_header{
+        width: 100%;
+        height: 50px;
+        /* background-color: rgb(80, 7, 148); */
+        display: flex;
+        justify-content: flex-start;
+        justify-content: center;
+        
+    }
+    
+    .game_nav_header{
+        width: 100px;
+        height: 100px;
+        /* background-color: #414141; */
+        background-image: url("../../assets/icons/gameroom-f.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+        margin-right: 20px;
+    }
+    
+    .game_nav_header:hover{
+        width: 100px;
+        height: 100px;
+        background-color: #414141;
+        background-image: url("../../assets/icons/gameroom.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+    
+        /* background-color: rgb(255, 217, 0); */
+    }
+    
+    .show_nav_header{
+        width: 100px;
+        height: 100px;
+        /* background-color: #414141; */
+        background-image: url("../../assets/icons/showroom-f.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+        margin-right: 20px;
+    }
+    
+    .show_nav_header:hover{
+        width: 100px;
+        height: 100px;
+        /* background-color: rgb(255, 217, 0); */
+        background-image: url("../../assets/icons/showroom.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    
+    .vip_nav_header{
+        width: 100px;
+        height: 100px;
+        /* background-color: rgb(1, 182, 143); */
+        margin-right: 10px;
+        background-image: url("../../assets/icons/viproom-f.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    
+    .vip_nav_header:hover{
+        width: 100px;
+        height: 100px;
+        /* background-color: rgb(255, 217, 0); */
+        background-image: url("../../assets/icons/viproom.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    
+    .private_nav_header{
+        width: 100px;
+        height: 100px;
+        /* background-color: rgb(33, 75, 5); */
+        margin-right: 20px;
+        background-image: url("../../assets/icons/lounge.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    
+    .private_nav_header:hover{
+        width: 100px;
+        height: 100px;
+        /* background-color: rgb(255, 217, 0); */
+        background-image: url("../../assets/icons/lounge.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    
+    .username_header{
+        
+        display: flex;
+        justify-content: flex-end;
+        padding-top:30px;
+        font-size: 16px;
+        width: 100%;
+        padding-right: 70px;
+        color: aliceblue;
+     
+    }
+
+
+    .logout{
+        width: 100 px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        margin-left: 10px;
+    
+    
+    }
+
+button[type="logout"]{
+    position: relative;
+    width: 90px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    background-color: rgb(41, 75, 80);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    -webkit-box-reflect: below 1px linear-gradient (transparent, #0004);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 18px;
+}
+
+button[type="logout"]::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094,#00f,#0f0, #ff0, #f00);
+    background-size: 400%;
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 20s linear infinite;
+    border-radius: 20px;
+   
+
+}
+
+button[type="logout"]::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094,#00f,#0f0, #ff0, #f00);
+    background-size: 400%;
+    opacity: 0;
+    filter: blur(20px);
+    transition: 0.5s;
+    animation: animate 20s linear infinite;
+    border-radius: 20px;
+
+    
+
+}
+
+button[type="logout"]:hover::before,
+button[type="logout"]:hover::after{
+    opacity: 1;
+
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 300% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+
+}
+
+button[type="logout"] span{
+    position: absolute;
+    display: block;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    text-align: cetner;
+    background: #0c0c0c;
+    color: rgba(250, 241, 241);
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+button[type="logout"]:hover span{
+    color: rgba(255,255,255,1);
+}
+
+button[type="logout"] span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+
+}
+
+
+}

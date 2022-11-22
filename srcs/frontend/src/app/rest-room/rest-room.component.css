@@ -1,0 +1,361 @@
+.all_rest{
+    width: 100%;
+    height: 100%;
+    background-color: #2c261e;
+}
+
+.big_title{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(145, 127, 51);
+  
+}
+
+
+.bloc_item_rest{
+   
+    background-color: #2c261e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.arnaud{
+    background-color: #2c261e;
+    background-image: url("../../assets/imgs/rest_room_arnaud_2450px.jpg");
+    width: 100%;
+    height: 400px;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 15%;
+
+}
+
+.env_arnaud{
+
+    /* background-color: rgb(192, 192, 192); */
+    width: 500px;
+    height: 300px;
+
+}
+
+.title_rest{
+    
+    font-size: 50px;
+    color: rgb(160, 136, 31);
+    /* background-color: blue; */
+}
+
+.content_rest{
+    font-size: 25px;
+    color: rgb(39, 37, 28);
+    /* background-color: aqua; */
+}
+
+.content_rest_black{
+    font-size: 25px;
+    color: rgb(155, 154, 151);
+    /* background-color: rgb(187, 255, 0); */
+
+}
+
+.env_alex{
+
+    /* background-color: rgb(192, 192, 192); */
+    width: 500px;
+    height: 300px;
+
+}
+
+.alex{
+    background-image: url("../../assets/imgs/rest_room_alex2450px.jpg");
+    background-color: #2c261e;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20%;
+}
+
+.antoine_c{
+    background-color: #2c261e;
+    background-image: url("../../assets/imgs/rest_room_antoineC2450px.jpg");
+    width: 100%;
+    height: 400px;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 15%;
+}
+.env_antoine_c{
+
+    /* background-color: rgb(192, 192, 192); */
+    width: 500px;
+    height: 300px;
+
+}
+
+.antoine_t{
+    background-color: #2c261e;
+    background-image: url("../../assets/imgs/rest_room_antoineT2_2450px.jpg");
+  
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20%;
+}
+
+.env_antoine_t{
+
+    /* background-color: rgb(192, 192, 192); */
+    width: 500px;
+    height: 300px;
+
+}
+
+.ching{
+    background-color: #2c261e;
+    background-image: url("../../assets/imgs/rest_room_ching_2450px.jpg");
+    width: 100%;
+    height: 400px;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 15%;
+}
+
+.env_ching{
+
+    /* background-color: rgb(192, 192, 192); */
+    width: 500px;
+    height: 300px;
+
+}
+
+button[type="restroomBlack"]{
+    color:rgb(252, 252, 252);
+    font-size: 16px;
+    background-color: rgb(97, 80, 5);
+    border-radius: 20px;
+    border: 0cm;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
+button[type="restroomBlack"]:hover{
+    color:#11111d;
+    font-size: 16px;
+    background-color: rgb(61, 197, 134);
+    border-radius: 20px;
+    /* border: 0cm; */
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .all_rest{
+        width: 100%;
+        height: 100%;
+        background-color: #2c261e;
+    }
+    
+    .big_title{
+        text-align: center;
+        font-size: 40px;
+        color: rgb(145, 127, 51);
+      
+    }
+    
+    
+    .bloc_item_rest{
+       
+        background-color: #2c261e;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    
+    .arnaud{
+        background-color: rgb(131, 131, 131);
+        background-image: url("../../assets/imgs/rest_room_arnaud_2450px.jpg");
+        width: 100%;
+        height: 400px;
+        /* background-size: contain; */
+        background-repeat: no-repeat;
+        background-position: center; 
+        display: flex;
+        justify-content: right;
+        align-items: center;
+       
+    
+    }
+    
+    .env_arnaud{
+    
+        width: 320px;
+        height: 300px;
+        margin-left: 180px;
+    
+    }
+    
+    .title_rest{
+        
+        font-size: 30px;
+        color: rgb(160, 136, 31);
+    }
+    
+    .content_rest{
+        font-size: 18px;
+        color: rgb(39, 37, 28);
+    }
+    
+    .content_rest_black{
+        font-size: 18px;
+        color: rgb(155, 154, 151);
+    
+    }
+    
+    .env_alex{
+    
+        /* background-color: rgb(192, 192, 192); */
+        width: 500px;
+        height: 300px;
+    
+    }
+    
+    .alex{
+        background-image: url("../../assets/imgs/rest_room_alex2450px.jpg");
+        background-color: rgb(8, 92, 92);
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center; 
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 10%;
+    }
+    
+    .antoine_c{
+        background-color: rgb(131, 131, 131);
+        background-image: url("../../assets/imgs/rest_room_antoineC2450px.jpg");
+        width: 100%;
+        height: 400px;
+        /* background-size: contain; */
+        background-repeat: no-repeat;
+        background-position: center; 
+ 
+    }
+    .env_antoine_c{
+    
+        /* background-color: rgb(192, 192, 192); */
+        width: 350px;
+        height: 300px;
+        margin-left: 200px;
+    
+    }
+    
+    .antoine_t{
+        background-color: rgb(62, 116, 116);
+        background-image: url("../../assets/imgs/rest_room_antoineT2_2450px.jpg");
+        background-color: rgb(8, 92, 92);
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center; 
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 10%;
+    }
+    
+    .env_antoine_t{
+    
+        /* background-color: rgb(192, 192, 192); */
+        width: 350px;
+        height: 300px;
+    
+    }
+    
+    .ching{
+        background-color: rgb(97, 143, 143);
+        background-image: url("../../assets/imgs/rest_room_ching_2450px.jpg");
+        width: 100%;
+        height: 400px;
+        /* background-size: contain; */
+        background-repeat: no-repeat;
+        background-position: center; 
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-right: 15%;
+    }
+    
+    .env_ching{
+    
+        /* background-color: rgb(192, 192, 192); */
+        width: 350px;
+        height: 300px;
+        margin-left: 250px;
+        padding-top: 50px;
+    
+    }
+    
+    button[type="restroomBlack"]{
+        color:rgb(252, 252, 252);
+        font-size: 16px;
+        background-color: rgb(97, 80, 5);
+        border-radius: 20px;
+        border: 0cm;
+        margin-right: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    
+    
+    button[type="restroomBlack"]:hover{
+        color:#11111d;
+        font-size: 16px;
+        background-color: rgb(61, 197, 134);
+        border-radius: 20px;
+        /* border: 0cm; */
+        margin-right: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+
+
+
+}

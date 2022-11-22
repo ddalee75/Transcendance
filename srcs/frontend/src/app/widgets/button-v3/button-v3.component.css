@@ -1,0 +1,33 @@
+button[type="submit"]{
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+    
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(46, 41, 35);
+    color: antiquewhite;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button[type="submit"]:hover{
+    margin-top: 0px;
+    width: auto;
+   
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(7, 184, 140);
+    color: rgb(46, 41, 35);
+    padding-left: 10px;
+    padding-right: 10px;
+}

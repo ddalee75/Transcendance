@@ -1,0 +1,19 @@
+
+
+<div class="chat_list_user">
+
+    <div >
+    <button class="chat_user_online" *ngIf="user.online" (click)="sendBtn(user)">
+        <div class="onoff" style ="background-color: aqua"></div>
+        {{user.nickname}} {{icon_message}}</button>
+
+    </div>
+
+
+    <button class="chat_user_offline" *ngIf="user.online==false" (click)="sendBtn(user)">
+        <div class="onoff" style ="background-color: rgb(114, 113, 113)"></div>
+        {{user.nickname}} </button> 
+
+    </div>
+
+<!-- <app-direct-chat *ngIf="this.show_chat==true" [Dest]="this.user" [Me]="this.Me"></app-direct-chat> -->

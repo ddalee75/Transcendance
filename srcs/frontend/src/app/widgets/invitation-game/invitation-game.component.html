@@ -1,0 +1,24 @@
+<div class="all_invitation">
+    <div class="cercle2">
+    <div class="env_all">
+        
+            <div class="photo" style="background-image:url({{this.fromWho.avatar}})"></div><!-- fin div photo -->
+            <div class="message">
+                {{this.fromWho.nickname}}
+            </div><!-- fin div message -->
+    
+
+        <div class="message2">
+        
+            invite you to play a game
+        </div>
+        <div class="env_button">
+            <app-button-v2 [text]="'No,thanks'" (click)="Nothanks()"></app-button-v2>
+            <app-button-v2 [text]="'Play Now'"></app-button-v2>
+
+        </div>
+
+
+    </div><!-- fin div env_all -->
+    </div><!-- fin div cercle2 -->
+</div><!-- fin div all_invitation -->

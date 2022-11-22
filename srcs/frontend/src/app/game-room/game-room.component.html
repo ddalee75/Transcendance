@@ -1,0 +1,38 @@
+<div class="all_game">
+
+    <div class="titre_game"></div>
+    <div class="bloc_item_games">
+        <div class="game_pong" (click)="showavailable()"></div>
+        <div class="game_mariokart">Coming soon</div>
+        <div class="game_streetfi">Coming soon</div>
+        <div class="game_tennis">Coming soon</div>
+        <div class="game_tetris">Coming soon</div>
+        <div class="game_puzzleBubble">Coming soon</div>
+    </div><!-- fin de div bloc_item_games  -->
+
+    <div class="pong_jouers">
+        <div class="bloc_players_available" *ngIf="visible==true">
+        
+            <h2>Players available for PONG</h2>    
+            <div class="env_player_available">
+                <div class="player_available" *ngFor="let user of list_user"> 
+                    <app-player-pong [user]="user" ></app-player-pong>
+                </div>
+            </div>
+        </div><!-- fin de div bloc_player_available  -->
+
+        <div class="bloc_players_anonyme">
+            <div class="bloc_just_play" *ngIf="visible==true">
+        
+                <h2>Just Play</h2>    
+                <div class="env_just_play">
+                    <div class="just_play_photo"> </div>
+                    <div class="just_play_name">Faceless Men</div>
+                    <div class="just_play_play>">PLAY</div>
+                </div>
+            </div><!-- fin de div bloc_player_available  -->
+
+        </div><!-- fin de div bloc_players_anonyme  -->
+    </div><!-- fin de div pong_jouers  -->
+    
+</div><!-- fin de div all_game  -->

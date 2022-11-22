@@ -1,0 +1,41 @@
+.all_players{
+    width: 100%;
+    height: auto;
+ 
+    padding: 20px;
+   
+    border-radius: 5px;
+}
+
+.env_players{
+    align-items: top;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.user{
+    width: 120px;
+    
+}
+
+
+.user_photo{
+    width: 120px;
+    height:120px;
+    /* background-color: bisque; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.user_name{
+    background-color: rgb(0, 12, 8);
+    color: aquamarine;
+
+}
+.btn{
+    text-align: center;
+    margin-bottom: -30px;
+   
+}
+

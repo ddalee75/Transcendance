@@ -1,0 +1,54 @@
+<div class="bloc">
+
+
+
+<div class="game">
+  <canvas class="test"
+    id="stage"
+    width="{{ gameConfig.board.board.width }}"
+    height="{{ gameConfig.board.board.height }}"
+    [ngStyle]="{
+      'max-width': '100vw',
+      'max-height': '100vh',
+      'background-color': gameConfig.board.board.color,
+      'opacity': '75%'
+    
+  }"
+  >
+    votre navigateur n'accepte pas Canvas
+  </canvas>
+  <div class="env_menu">
+  <div class="menu" *ngIf="!gameConfig.states.start">
+    <h2>PONG</h2>
+    <div env_button>
+    <button (click)="reset()">New Game</button>
+    <button (click)="resetAll()">Reset all params</button>
+    </div><!--fin div env_button-->
+    <app-pong-player [player]="gameConfig.left"></app-pong-player>
+    <app-pong-player [player]="gameConfig.right"></app-pong-player>
+    <div class="customize">
+        <div class="pong_ball">
+        <app-pong-ball [ball]="gameConfig.ball"></app-pong-ball></div>
+        <div class="pong-game">
+        <app-pong-game [game]="gameConfig"></app-pong-game></div>
+    </div> <!--fin div customize-->
+  </div>
+  <div class="menu" *ngIf="gameConfig.states.start && win() != null">
+    <h2>{{ "Player " + win() + " win" }}</h2>
+    <button (click)="reset()">new game</button>
+  </div>
+</div><!--fin div env_menu-->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <video src="../../assets/video/Espace - 5200s.mp4" autoplay="autoplay" muted="" loop="infinite"></video>
+</div>

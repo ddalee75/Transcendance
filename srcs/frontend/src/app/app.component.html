@@ -1,0 +1,15 @@
+
+
+<app-invitation-game 
+[fromWho]="this.invitationFromWho" 
+(showInvitationEvent)="receiveShowInivtationEvent($event)"
+*ngIf="invitation==true"></app-invitation-game>
+
+<app-invitation-refuse *ngIf="refuse==true" 
+[refuseFromWho]="this.refuseFromWho"
+(refuseInvitationEvent)="receiverefueInvitationEvent($event)"></app-invitation-refuse>
+<app-bloc-chat *ngIf="getRoute() != '/'"></app-bloc-chat>
+<app-header  *ngIf="getRoute() != '/'" ></app-header>
+<router-outlet></router-outlet>
+
+

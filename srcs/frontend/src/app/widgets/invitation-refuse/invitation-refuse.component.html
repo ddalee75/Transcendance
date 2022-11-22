@@ -1,0 +1,23 @@
+<div class="all_invitation">
+    <div class="cercle2">
+    <div class="env_all">
+        
+            <div class="photo" style="background-image:url({{this.refuseFromWho.avatar}})"></div><!-- fin div photo -->
+            <div class="message">
+                {{this.refuseFromWho.nickname}}
+            </div><!-- fin div message -->
+    
+
+        <div class="message2">
+        
+            <b>denied</b> your invitation !
+        </div>
+        <div class="env_button">
+            <app-button-v2 [text]="'Ok, got it !'" (click)="okGotIt()"></app-button-v2>
+          
+        </div>
+
+
+    </div><!-- fin div env_all -->
+    </div><!-- fin div cercle2 -->
+</div><!-- fin div all_invitation -->

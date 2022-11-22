@@ -1,0 +1,33 @@
+.salon_available{
+    width: 100%;
+    background-color: rgb(52, 54, 51);
+    display: flex;
+    flex-direction: column;
+}
+
+.salon_unique{
+    width: 100%;
+    background-color: rgb(27, 31, 2);
+    border:0px;
+    margin-top: 1px;
+   
+    display: flex;
+    justify-content: center;
+   
+}
+.titre{
+    color: rgb(1, 179, 81);
+    font-size: 13px;
+    margin-left: 5px; 
+    cursor: pointer;
+
+
+}
+
+.icon{
+  
+    font-size: 10px;
+    margin-top: 3px;
+
+
+}

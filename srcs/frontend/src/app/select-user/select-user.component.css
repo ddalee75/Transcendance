@@ -1,0 +1,62 @@
+.chat_list_user{
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.chat_user_online{
+    background-color: rgb(52, 53, 52);
+    width: 100%;
+    text-align: left;
+    color: aliceblue;
+    border: 0px;
+    cursor: pointer;
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.chat_user_offline{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: left;
+    color: rgb(138, 140, 141);
+    cursor: pointer;
+    margin-top: 0px;
+    border: 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.chat_user_online:hover{
+    background-color: rgb(23, 184, 122);
+    width: 100%;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    border: 0px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+.chat_user_offline:hover{
+    background-color: rgb(28, 66, 38);
+    width: 100%;
+    text-align: left;
+    color: rgb(81, 199, 106);
+    cursor: pointer;
+    margin-top: 0px;
+    border: 0px;
+}
+
+.onoff{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: aqua;
+    margin-right: 5px;
+    margin-top: 5px;
+}   

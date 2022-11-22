@@ -1,0 +1,14 @@
+<div class="all_login">
+
+    <div class=" logo_login">    
+    <img src="../../assets/icons/logo_t.png">  </div>
+   
+    <a *ngIf="!tfa" (click)="OAuthSignIn()"><span>Login 42</span></a>
+	<div *ngIf="tfa">
+	<p class="tfa_count">{{tfa_count}} TRIES LEFT</p>
+	<input type="text" (keydown.enter)="tfaLogin()" [(ngModel)]="tfa_key">
+   </div>
+  
+
+</div> 
+<!-- fin de all_login -->

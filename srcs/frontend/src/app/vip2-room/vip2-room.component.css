@@ -1,0 +1,166 @@
+.all_vip{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(33, 40, 46);
+    background-image: url("../../assets/imgs/vip2540x1240px.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+}
+
+.bloc_vip{
+
+    width: 600px;
+    height: auto;
+    /* background-color: rgba(157, 180, 201, 0.349); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+.titre_modify{
+ 
+    text-align: center;
+}
+
+.title_vip{
+
+    width: 100%;
+  
+    margin-top: 50px;
+  
+    color:rgb(184, 142, 7);
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.title_vip2{
+
+    width: 100%;
+
+  
+    margin-bottom: 20px;
+    color:rgb(7, 184, 146);
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.user_photo{
+    width: 200px;
+    height:200px;
+    /* background-color: bisque; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    border-radius: 5px;
+    
+
+}
+
+.env_qr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+}
+.qr_code{
+    width: 100%;
+    height:160px;
+    /* background-color: bisque; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-top: 50px;
+    margin-bottom: 20px;
+ 
+
+}
+
+.tfa_input{
+    /* background-color: bisque; */
+    width: 200px;
+    height: 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.tfa_count{
+    /* background-color: aqua; */
+	color:white;
+    text-align: center;
+	font-size: large;
+	font-weight: bold;
+}
+
+.user_name{
+    width: 200px;
+    height:auto;
+    background-color: rgb(39, 34, 29);
+    color:antiquewhite;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.search{
+    margin-top: 50px;
+    text-align: center;
+
+   
+}
+
+
+
+.champ_avatar{
+    /* background-color: aqua; */
+    width: 100%;
+    color: rgb(85, 85, 85);
+    font-size: 18px;
+    font-weight:bold;
+}
+
+Input[type=file]{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+   
+}
+
+.champ_nickname{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight:bold;
+  
+
+}
+input[type="text"]{
+    border-radius: 20px;
+    color: rgb(92, 89, 89);
+}
+
+
+.title_historique{
+    width: 70%;
+    height:50px;
+    background-color: rgba(92, 80, 22, 0.534);
+    margin-top: 30px;
+    color: rgb(184, 142, 7);
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 7px;
+}
+
+@media only screen and (max-width: 600px) {
+}

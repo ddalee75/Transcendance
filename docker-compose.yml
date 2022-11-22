@@ -1,0 +1,82 @@
+version: '3.9'
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    expose:
+      - 5432
+    networks:
+      - backend_network
+    volumes:
+      - data:/var/lib/postgresql/data
+
+  backend:
+    container_name: backend
+    build:
+      context: ./srcs/backend
+      dockerfile: Dockerfile
+    image: backend
+    restart: always
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      IP_HOST: ${IP_HOST}
+      CLIENT_ID: ${CLIENT_ID}
+      CLIENT_SECRET: ${CLIENT_SECRET}
+    expose:
+      - 3000
+    ports:
+      - '5555:5555'
+    networks:
+      - backend_network
+    volumes:
+      - ./srcs/backend:/usr/src/app
+    depends_on:
+      - postgres
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ./srcs/frontend
+      dockerfile: Dockerfile
+    image: frontend
+    restart: always
+    environment:
+      IP_HOST: ${IP_HOST}
+    expose:
+      - 4200
+    networks:
+      - frontend_network
+    volumes:
+      - ./srcs/frontend:/usr/src/app
+
+  nginx:
+    container_name: nginx
+    build:
+      context: ./srcs/nginx
+      dockerfile: Dockerfile
+    image: nginx
+    restart: always
+    ports:
+      - ${PORT_HTTP_HOST}:80
+      - ${PORT_HTTPS_HOST}:443
+    networks:
+      - frontend_network
+      - backend_network
+    depends_on:
+      - backend
+      - frontend
+
+volumes:
+  data:
+
+networks:
+  backend_network:
+    driver: bridge
+  frontend_network:
+    driver: bridge

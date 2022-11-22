@@ -1,0 +1,50 @@
+.chat_list_user{
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.firendonline{
+    
+        background-color: rgb(52, 53, 52);
+        width: 100%;
+        text-align: left;
+        color: aliceblue;
+        border: 0px;
+        cursor: pointer;
+        margin-top: 0px;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 13px;
+  
+}
+
+.firendonline:hover{
+    
+    background-color: rgb(45, 151, 238);
+    width: 100%;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    border: 0px;
+    cursor: pointer;
+    margin-top: 1px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 13px;
+
+}
+
+.onoff{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: aqua;
+    margin-top:5px;
+    margin-left: 3px;
+    margin-right: 5px ;
+   
+}   
