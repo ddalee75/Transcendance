@@ -1,3 +1,5 @@
+Version sans connection du jeux Pong
+
 # Transcendence
 
 <b>Creation of a website for an online game “PONG”, with private and public chat and user interface</b>
